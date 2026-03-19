@@ -23,7 +23,7 @@ Embedded Systems · FPGA · Autonomous Systems · Signal Processing
 
 ## 🚗 Featured Project — CoVAPSy
 
-> Autonomous 1/10-scale race car — ENS Paris-Saclay competition 2026
+> Autonomous 1/10-scale race car · ENS Paris-Saclay competition 2026 · [**View Repository →**](https://github.com/mahdidou711/covapsy)
 
 | Component | Details |
 |-----------|---------|
