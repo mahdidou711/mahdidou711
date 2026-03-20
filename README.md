@@ -2,49 +2,62 @@
 
 # Bouama Mehdi
 
-**M1 Student · E3A-SATIE · Université Paris-Saclay**  
+**M1 · E3A-SATIE · Université Paris-Saclay**
+
 Embedded Systems · FPGA · Autonomous Systems · Signal Processing
 
-[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/mahdidou711)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mehdi-bouama/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-%2300FF41.svg?logo=github&logoColor=black)](https://mahdidou711.github.io)
 
 </div>
 
 ---
 
-## About Me
+## About
 
-- 🎓 Master 1 — E3A-SATIE track (Systèmes Autonomes, Traitement de l'Information & Intelligence Artificielle), Université Paris-Saclay
-- 🔧 Focus: FPGA design (VHDL, Quartus), embedded C (STM32 CMSIS, RPi), real-time systems
-- 🤖 Leading **CoVAPSy** — an autonomous 1/10-scale car project (RPi 4 + STM32 + RPLidar A2M12)
-- 📡 Interests: control theory, signal & image processing, reinforcement learning
-- 🇩🇿 Algerian student based in Essonne, France
+- 🎓 M1 E3A-SATIE — Systèmes Autonomes, Traitement de l'Information & Intelligence Artificielle · Paris-Saclay
+- 🔧 FPGA design (VHDL, Quartus 13.1), embedded C (STM32 CMSIS, RPi4), real-time systems
+- 🤖 Lead developer on **CoVAPSy** — autonomous 1/10-scale race car (RPLidar A2M12, PID · FTG · PPO)
+- 📡 Control theory · signal and image processing · reinforcement learning
+- 🇩🇿 Based in Essonne, France
 
 ---
 
-## 🚗 Featured Project — CoVAPSy
+## 🚗 Featured — CoVAPSy
 
-> Autonomous 1/10-scale race car · ENS Paris-Saclay competition 2026 · [**View Repository →**](https://github.com/mahdidou711/covapsy)
+> Autonomous race car · ENS Paris-Saclay 2026 · [View repo →](https://github.com/mahdidou711/covapsy)
 
-| Component | Details |
-|-----------|---------|
+| Layer | Details |
+|---|---|
 | Compute | Raspberry Pi 4 |
-| Low-level controller | STM32 shield (CMSIS, no HAL) |
+| Low-level | STM32 shield — CMSIS, no HAL |
 | Perception | RPLidar A2M12 |
-| Algorithms | PID · Follow-the-Gap · PPO (Webots → real transfer) |
+| Algorithms | PID · Follow-the-Gap · PPO (Webots sim-to-real) |
 | Stack | C · Python · pthreads · Stable-Baselines3 · Gymnasium |
 
 ---
 
 ## 💻 Tech Stack
 
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![VHDL](https://img.shields.io/badge/VHDL-%23FF6F00.svg?style=for-the-badge&logo=intel&logoColor=white)
-![Embedded](https://img.shields.io/badge/STM32-CMSIS-%2303234B.svg?style=for-the-badge&logo=stmicroelectronics&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-%23FCC624.svg?style=for-the-badge&logo=linux&logoColor=black)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![LaTeX](https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white)
+**Embedded & Hardware**
+
+![C](https://img.shields.io/badge/C-%2300599C.svg?style=flat-square&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=flat-square&logo=c%2B%2B&logoColor=white)
+![VHDL](https://img.shields.io/badge/VHDL-%23FF6F00.svg?style=flat-square&logo=intel&logoColor=white)
+![STM32](https://img.shields.io/badge/STM32--CMSIS-%2303234B.svg?style=flat-square&logo=stmicroelectronics&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-%23FCC624.svg?style=flat-square&logo=linux&logoColor=black)
+
+**Software & AI**
+
+![Python](https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
+![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat-square&logo=PyTorch&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-%23013243.svg?style=flat-square&logo=numpy&logoColor=white)
+
+**Tooling**
+
+![Git](https://img.shields.io/badge/Git-%23F05033.svg?style=flat-square&logo=git&logoColor=white)
+![LaTeX](https://img.shields.io/badge/LaTeX-%23008080.svg?style=flat-square&logo=latex&logoColor=white)
+![VSCode](https://img.shields.io/badge/VSCode-%230078d7.svg?style=flat-square&logo=visual-studio-code&logoColor=white)
 
 ---
 
@@ -52,11 +65,28 @@ Embedded Systems · FPGA · Autonomous Systems · Signal Processing
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=mahdidou711&theme=dark&hide_border=false&include_all_commits=false&count_private=false)
+<table>
+  <tr>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api?username=mahdidou711&theme=dark&hide_border=true&include_all_commits=true&count_private=true&cache_seconds=86400" />
+    </td>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mahdidou711&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact&cache_seconds=86400" />
+    </td>
+  </tr>
+</table>
 
-![GitHub Streak](https://nirzak-streak-stats.vercel.app/?user=mahdidou711&theme=dark&hide_border=false)
+![Streak](https://nirzak-streak-stats.vercel.app/?user=mahdidou711&theme=dark&hide_border=true&cache_seconds=86400)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=mahdidou711&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+</div>
+
+---
+
+## 🐍 Contribution Activity
+
+<div align="center">
+
+![Snake](https://raw.githubusercontent.com/mahdidou711/mahdidou711/output/github-contribution-grid-snake-dark.svg)
 
 </div>
 
