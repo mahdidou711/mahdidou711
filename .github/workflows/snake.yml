@@ -20,7 +20,9 @@ jobs:
 
       - name: Push to output branch
         run: |
-          cd dist
+          mkdir output-branch
+          cp dist/*.svg output-branch/
+          cd output-branch
           git init
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
