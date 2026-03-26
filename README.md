@@ -76,8 +76,7 @@ Embedded Systems · FPGA · Autonomous Systems · Signal Processing
   </tr>
 </table>
 
-![Streak](https://nirzak-streak-stats.vercel.app/?user=mahdidou711&theme=dark&hide_border=true&cache_seconds=86400)
-
+![Streak](https://github-readme-streak-stats.herokuapp.com/?user=mahdidou711&theme=dark&hide_border=true)
 </div>
 
 ---
