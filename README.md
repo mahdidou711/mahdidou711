@@ -62,21 +62,13 @@ Embedded Systems · FPGA · Autonomous Systems · Signal Processing
 ---
 
 ## 📊 GitHub Stats
-
 <div align="center">
 
-<table>
-  <tr>
-    <td>
-      <img src="https://github-readme-stats.vercel.app/api?username=mahdidou711&theme=dark&hide_border=true&include_all_commits=true&count_private=true&cache_seconds=86400" />
-    </td>
-    <td>
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mahdidou711&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact&cache_seconds=86400" />
-    </td>
-  </tr>
-</table>
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=mahdidou711&theme=dark&hide_border=true&cache_seconds=86400)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mahdidou711&theme=dark&hide_border=true&layout=compact&cache_seconds=86400)
 
 ![Streak](https://github-readme-streak-stats.herokuapp.com/?user=mahdidou711&theme=dark&hide_border=true)
+
 </div>
 
 ---
