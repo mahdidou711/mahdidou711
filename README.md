@@ -25,7 +25,7 @@ Embedded Systems · FPGA · Autonomous Systems · Signal Processing
 
 ## 🚗 Featured — CoVAPSy
 
-> Autonomous race car · ENS Paris-Saclay 2026 · [View repo →](https://github.com/mahdidou711/covapsy)
+> Autonomous race car · ENS Paris-Saclay 2026 · [View repo →](https://github.com/mahdidou711/mahdidou711-covapsy)
 
 | Layer | Details |
 |---|---|
@@ -34,6 +34,20 @@ Embedded Systems · FPGA · Autonomous Systems · Signal Processing
 | Perception | RPLidar A2M12 |
 | Algorithms | PID · Follow-the-Gap · PPO (Webots sim-to-real) |
 | Stack | C · Python · pthreads · Stable-Baselines3 · Gymnasium |
+
+---
+
+## 🚀 Featured Projects
+
+| Project | Domain | Stack | Status |
+|---|---|---|---|
+| [CoVAPSy](https://github.com/mahdidou711/mahdidou711-covapsy) | Autonomous robotics | Python · LiDAR · steering · sonar · control loop | Public · CI |
+| [IAQ Dashboard V2](https://github.com/mahdidou711/iaq-dashboard-v2) | IoT and sensor dashboard | Flask · ESP32 · JavaScript · sensor visualization | Public · CI |
+| [RPNcalculator](https://github.com/mahdidou711/RPNcalculator) | C programming | C · CMake · shunting-yard · RPN evaluator | Public · CI |
+| [C Image Processing SIMD](https://github.com/mahdidou711/c-image-processing-simd) | Low-level image processing | C · OpenMP · SIMD-oriented optimization | Public · CI |
+| [Computer Vision Algorithms](https://github.com/mahdidou711/computer-vision-algorithms-python) | Computer vision | Python · Hough · Harris · FAST · homography | Public · CI |
+| [C++ OOP and Data Structures](https://github.com/mahdidou711/cpp-oop-data-structures) | C++ programming | C++17 · OOP · matrices · buffers · trees | Public · CI |
+| [Portfolio Website](https://github.com/mahdidou711/mahdidou711.github.io) | Personal portfolio | HTML · GitHub Pages | Public |
 
 ---
 
