@@ -1,0 +1,9 @@
+# Local AI assistant files
+CLAUDE.md
+.codex/
+.agents/
+.claude/
+
+# OS/editor files
+.DS_Store
+.vscode/
