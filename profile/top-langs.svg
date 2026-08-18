@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="195" viewBox="0 0 470 195" role="img" aria-label="Public profile languages">
+  <rect width="469" height="194" x="0.5" y="0.5" rx="6" fill="#0d1117" stroke="#30363d"/>
+  <text x="24" y="38" fill="#58a6ff" font-family="Segoe UI, Ubuntu, sans-serif" font-size="18" font-weight="600">Public Profile Languages</text>
+  <rect x="24" y="60" width="422" height="9" rx="4.5" fill="#21262d"/>
+  <rect x="24" y="60" width="126" height="9" rx="4.5" fill="#555555"/>
+  <rect x="150" y="60" width="110" height="9" fill="#f34b7d"/>
+  <rect x="260" y="60" width="95" height="9" fill="#3572A5"/>
+  <rect x="355" y="60" width="55" height="9" fill="#adb2cb"/>
+  <rect x="410" y="60" width="36" height="9" rx="4.5" fill="#89e051"/>
+  <circle cx="30" cy="99" r="5" fill="#555555"/>
+  <text x="43" y="104" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13">C</text>
+  <circle cx="145" cy="99" r="5" fill="#f34b7d"/>
+  <text x="158" y="104" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13">C++</text>
+  <circle cx="270" cy="99" r="5" fill="#3572A5"/>
+  <text x="283" y="104" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13">Python</text>
+  <circle cx="30" cy="130" r="5" fill="#adb2cb"/>
+  <text x="43" y="135" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13">VHDL</text>
+  <circle cx="145" cy="130" r="5" fill="#89e051"/>
+  <text x="158" y="135" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13">Shell / tooling</text>
+  <text x="24" y="170" fill="#8b949e" font-family="Segoe UI, Ubuntu, sans-serif" font-size="11">TypeScript excluded intentionally. Public repositories only.</text>
+</svg>
