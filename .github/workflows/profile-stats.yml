@@ -9,6 +9,7 @@ on:
       - main
     paths:
       - ".github/workflows/profile-stats.yml"
+      - ".github/scripts/generate_profile_stats.py"
 
 jobs:
   generate:
@@ -18,30 +19,24 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@v6
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Generate GitHub stats card
-        uses: stats-organization/github-readme-stats-action@v2
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&theme=dark&hide_border=true&include_all_commits=true
-          path: profile/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-          fail_on_error: true
+          python-version: "3.x"
 
-      - name: Generate top languages card
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&theme=dark&hide_border=true&hide=TypeScript
-          path: profile/top-langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-          fail_on_error: true
+      - name: Generate local profile cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER: ${{ github.repository_owner }}
+        run: python .github/scripts/generate_profile_stats.py
 
       - name: Commit generated cards
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/*.svg
+          git add profile/stats.svg profile/top-langs.svg
           git diff --cached --quiet || git commit -m "Update profile stats"
           git push
