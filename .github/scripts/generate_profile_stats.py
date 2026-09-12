@@ -1,7 +1,6 @@
 import json
 import os
 from collections import Counter
-from datetime import datetime, timezone
 from html import escape
 from pathlib import Path
 from urllib.error import HTTPError, URLError
@@ -12,6 +11,11 @@ USER = os.environ.get("GITHUB_USER", "mahdidou711")
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
 API = "https://api.github.com"
 OUTPUT = Path("profile")
+
+EXCLUDED_REPOSITORIES = {
+    "mahdidou711",
+    "mahdidou711.github.io",
+}
 
 LANG_COLORS = {
     "C": "#555555",
@@ -63,52 +67,20 @@ def get_languages(repos):
     for repo in repos:
         if repo.get("fork") or repo.get("archived"):
             continue
+        if repo.get("name") in EXCLUDED_REPOSITORIES:
+            continue
         try:
             languages = api_get(f"/repos/{USER}/{repo['name']}/languages")
         except (HTTPError, URLError, TimeoutError):
             continue
         for language, byte_count in languages.items():
-            if language.lower() == "typescript":
-                continue
             totals[language] += int(byte_count)
     return totals
 
 
-def write_stats_svg(user, repos):
-    owned = [r for r in repos if not r.get("fork")]
-    public_repos = int(user.get("public_repos", len(repos)))
-    stars = sum(int(r.get("stargazers_count", 0)) for r in owned)
-    forks = sum(int(r.get("forks_count", 0)) for r in owned)
-    followers = int(user.get("followers", 0))
-    updated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="470" height="195" viewBox="0 0 470 195" role="img" aria-label="GitHub public profile stats">
-  <rect width="469" height="194" x="0.5" y="0.5" rx="6" fill="#0d1117" stroke="#30363d"/>
-  <text x="24" y="38" fill="#58a6ff" font-family="Segoe UI, Ubuntu, sans-serif" font-size="18" font-weight="600">{escape(USER)}'s GitHub</text>
-  <text x="24" y="66" fill="#8b949e" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12">Public repositories only</text>
-
-  <text x="24" y="105" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="22" font-weight="600">{public_repos}</text>
-  <text x="24" y="124" fill="#8b949e" font-family="Segoe UI, Ubuntu, sans-serif" font-size="11">Public repos</text>
-
-  <text x="137" y="105" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="22" font-weight="600">{stars}</text>
-  <text x="137" y="124" fill="#8b949e" font-family="Segoe UI, Ubuntu, sans-serif" font-size="11">Stars earned</text>
-
-  <text x="250" y="105" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="22" font-weight="600">{forks}</text>
-  <text x="250" y="124" fill="#8b949e" font-family="Segoe UI, Ubuntu, sans-serif" font-size="11">Forks</text>
-
-  <text x="360" y="105" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="22" font-weight="600">{followers}</text>
-  <text x="360" y="124" fill="#8b949e" font-family="Segoe UI, Ubuntu, sans-serif" font-size="11">Followers</text>
-
-  <text x="24" y="158" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12">Embedded Systems · FPGA · Autonomous Systems · Signal Processing</text>
-  <text x="24" y="180" fill="#6e7681" font-family="Segoe UI, Ubuntu, sans-serif" font-size="10">Updated {escape(updated)}</text>
-</svg>
-'''
-    (OUTPUT / "stats.svg").write_text(svg, encoding="utf-8")
-
-
 def write_languages_svg(totals):
     top = totals.most_common(6)
-    total_bytes = sum(value for _, value in top)
+    total_bytes = sum(totals.values())
 
     if total_bytes == 0:
         rows = '<text x="24" y="95" fill="#8b949e" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13">No public language data available.</text>'
@@ -142,7 +114,7 @@ def write_languages_svg(totals):
   <text x="24" y="38" fill="#58a6ff" font-family="Segoe UI, Ubuntu, sans-serif" font-size="18" font-weight="600">Top Public Languages</text>
   {bar}
   {rows}
-  <text x="24" y="184" fill="#6e7681" font-family="Segoe UI, Ubuntu, sans-serif" font-size="10">TypeScript excluded · private repositories excluded</text>
+  <text x="24" y="184" fill="#6e7681" font-family="Segoe UI, Ubuntu, sans-serif" font-size="10">Profile/portfolio repositories excluded · private repositories excluded</text>
 </svg>
 '''
     (OUTPUT / "top-langs.svg").write_text(svg, encoding="utf-8")
@@ -150,10 +122,8 @@ def write_languages_svg(totals):
 
 def main():
     OUTPUT.mkdir(parents=True, exist_ok=True)
-    user = api_get(f"/users/{USER}")
     repos = get_public_repos()
     languages = get_languages(repos)
-    write_stats_svg(user, repos)
     write_languages_svg(languages)
 
 

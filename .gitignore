@@ -7,3 +7,7 @@ CLAUDE.md
 # OS/editor files
 .DS_Store
 .vscode/
+
+# Python cache
+__pycache__/
+*.pyc
