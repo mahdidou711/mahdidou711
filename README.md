@@ -9,7 +9,6 @@ FPGA · SoC · Embedded Systems · Digital Design
 **Seeking a 2027 internship in FPGA/SoC and embedded systems**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mehdi-bouama/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-%2300FF41.svg?logo=github&logoColor=black)](https://bouama-mehdi-portfolio.vercel.app)
 
 </div>
 
@@ -45,7 +44,7 @@ VHDL · FPGA · GHDL · Quartus · FSM · Datapath Design
 
 **Embedded Systems**
 
-C · C++ · STM32/CMSIS · ESP32 · Raspberry Pi · Linux
+C · C++ · STM32 · ESP32 · Raspberry Pi · Linux
 
 **Software & Tooling**
 
