@@ -27,9 +27,9 @@ FPGA · RTL · Digital Design · Processor Architecture · Embedded Systems
 
 | Project | Focus | Highlights |
 |---|---|---|
-| [8-bit Multicycle Processor](https://github.com/mahdidou711/vhdl-8bit-multicycle-processor) | FPGA · Processor architecture | 8-bit multicycle processor · 12-operation ALU · 1.57M+ GHDL test vectors · DE1 integration preparation · CI |
-| [Integer Square Root Core](https://github.com/mahdidou711/vhdl-integer-sqrt) | FPGA · Arithmetic architecture | 16-bit integer square root · 65,536 inputs verified · DE1 integration preparation · CI |
-| [Sequential VHDL Search & Multiplier](https://github.com/mahdidou711/vhdl-search-multiplier) | FPGA · Digital design | Sequential search FSM · iterative 8×8 multiplier · exhaustive GHDL verification · DE1 integration preparation · CI |
+| [8-bit Multicycle Processor](https://github.com/mahdidou711/vhdl-8bit-multicycle-processor) | FPGA · Processor architecture | 8-bit multicycle processor · 12-operation ALU · 1.57M+ GHDL test vectors · DE1 hardware implementation · CI |
+| [Integer Square Root Core](https://github.com/mahdidou711/vhdl-integer-sqrt) | FPGA · Arithmetic architecture | 16-bit integer square root · 65,536 inputs verified · DE1 hardware implementation · CI |
+| [Sequential VHDL Search & Multiplier](https://github.com/mahdidou711/vhdl-search-multiplier) | FPGA · Digital design | Sequential search FSM · iterative 8×8 multiplier · exhaustive GHDL verification · DE1 hardware implementation · CI |
 | [CoVAPSy](https://github.com/mahdidou711/mahdidou711-covapsy) | Autonomous robotics | Raspberry Pi 4 · RPLidar A2M12 · SRF10 sonar · 50 Hz control loop |
 | [C Image Processing SIMD](https://github.com/mahdidou711/c-image-processing-simd) | Low-level optimization | C · OpenMP · SIMD-oriented image processing |
 | [RPN Calculator](https://github.com/mahdidou711/RPNcalculator) | Low-level C | C99 · CMake · stack-based evaluation · shunting-yard parser · CI |
