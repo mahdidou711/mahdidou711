@@ -8,6 +8,7 @@ FPGA · RTL · Digital Design · Processor Architecture · Embedded Systems
 
 **Seeking a 4–6 month final-year internship from March 18, 2027 in FPGA/RTL, digital design, processor architecture, SoC integration or hardware/software co-design**
 
+[![Website](https://img.shields.io/badge/Website-mehdibouama.me-17365D)](https://mehdibouama.me/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mehdi-bouama/)
 [![Email](https://img.shields.io/badge/Email-mehdi.bouama.pro%40gmail.com-blue?logo=gmail&logoColor=white)](mailto:mehdi.bouama.pro@gmail.com)
 
