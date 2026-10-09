@@ -60,6 +60,8 @@ LiDAR · Sonar · Control Systems · Sensor Integration
 
 ## Public Repository Languages
 
+*Language-byte snapshot last updated September 13, 2026. It excludes forks, archived repositories, the profile repository, GitHub Pages and private repositories. This image is not automatically refreshed and does not measure proficiency.*
+
 <div align="center">
 
 ![Top Public Languages](./profile/top-langs.svg)

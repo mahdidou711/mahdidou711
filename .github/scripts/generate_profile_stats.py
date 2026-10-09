@@ -114,7 +114,7 @@ def write_languages_svg(totals):
   <text x="24" y="38" fill="#58a6ff" font-family="Segoe UI, Ubuntu, sans-serif" font-size="18" font-weight="600">Top Public Languages</text>
   {bar}
   {rows}
-  <text x="24" y="184" fill="#6e7681" font-family="Segoe UI, Ubuntu, sans-serif" font-size="10">Profile/portfolio repositories excluded · private repositories excluded</text>
+  <text x="24" y="184" fill="#6e7681" font-family="Segoe UI, Ubuntu, sans-serif" font-size="10">Profile and GitHub Pages repos excluded · private repos excluded</text>
 </svg>
 '''
     (OUTPUT / "top-langs.svg").write_text(svg, encoding="utf-8")
