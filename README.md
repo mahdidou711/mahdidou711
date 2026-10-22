@@ -30,7 +30,7 @@ FPGA · RTL · Digital Design · Processor Architecture · Embedded Systems
 | Project | Focus | Highlights |
 |---|---|---|
 | [8-bit Multicycle Processor](https://github.com/mahdidou711/vhdl-8bit-multicycle-processor) | FPGA · Processor architecture | Extends a university RTL design · 12-operation ALU · 1,573,888 exhaustive ALU/sub-unit GHDL vectors · separate processor regression · DE1 port preparation · CI |
-| [Integer Square Root Core](https://github.com/mahdidou711/vhdl-integer-sqrt) | FPGA · Arithmetic architecture | 16-bit integer square root · 65,536 inputs exhaustively simulated · historical DE1 coursework core / current wrapper not board-tested · CI |
+| [Integer Square Root Core](https://mehdibouama.me/projects/integer-square-root-16bit/) | FPGA · Arithmetic architecture | 16-bit integer square root · 65,536 inputs exhaustively simulated · historical DE1 coursework core / current wrapper not board-tested · *(active development)* |
 | [Sequential VHDL Search & Multiplier](https://github.com/mahdidou711/vhdl-search-multiplier) | FPGA · Digital design | Sequential search FSM · multiplier RTL by a fellow student · exhaustive multiplier verification · historical/current DE1 boundary · CI |
 | [CoVAPSy](https://github.com/mahdidou711/mahdidou711-covapsy) | Autonomous robotics | Team project · navigation/control software on Raspberry Pi 4 · configured 50 Hz control loop · RPLidar A2M12 · SRF10 sonar |
 | [C Image Processing SIMD](https://github.com/mahdidou711/c-image-processing-simd) | Low-level optimization | C · OpenMP · SIMD-oriented image processing |
