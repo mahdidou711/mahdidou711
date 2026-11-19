@@ -1,23 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="470" height="195" viewBox="0 0 470 195" role="img" aria-label="Top public repository languages">
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="195" viewBox="0 0 470 195" role="img" aria-label="Normalized languages across core engineering repositories">
   <rect width="469" height="194" x="0.5" y="0.5" rx="6" fill="#0d1117" stroke="#30363d"/>
-  <text x="24" y="38" fill="#58a6ff" font-family="Segoe UI, Ubuntu, sans-serif" font-size="18" font-weight="600">Top Public Languages</text>
-  <rect x="24.00" y="60" width="117.30" height="9" rx="4.5" fill="#adb2cb"/>
-  <rect x="141.30" y="60" width="106.18" height="9" fill="#3572A5"/>
-  <rect x="247.49" y="60" width="99.73" height="9" fill="#f34b7d"/>
-  <rect x="347.22" y="60" width="53.22" height="9" fill="#555555"/>
-  <rect x="400.44" y="60" width="35.24" height="9" fill="#e34c26"/>
-  <rect x="435.68" y="60" width="8.23" height="9" rx="4.5" fill="#89e051"/>
-  <circle cx="30" cy="95" r="5" fill="#adb2cb"/>
-  <text x="43" y="99" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12">VHDL 27.8%</text>
+  <text x="24" y="38" fill="#58a6ff" font-family="Segoe UI, Ubuntu, -apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="600">Top Languages</text>
+  <defs>
+    <clipPath id="lang-bar-clip">
+      <rect x="24" y="58" width="422" height="9" rx="4.5" ry="4.5"/>
+    </clipPath>
+  </defs>
+  <rect x="24" y="58" width="422" height="9" rx="4.5" fill="#21262d"/>
+  <g clip-path="url(#lang-bar-clip)">
+    <rect x="24.00" y="58" width="178.55" height="9" fill="#555555"/>
+    <rect x="202.55" y="58" width="78.58" height="9" fill="#3572A5"/>
+    <rect x="281.13" y="58" width="74.26" height="9" fill="#adb2cb"/>
+    <rect x="355.39" y="58" width="35.17" height="9" fill="#6E4C13"/>
+    <rect x="390.55" y="58" width="34.92" height="9" fill="#f34b7d"/>
+    <rect x="425.47" y="58" width="13.11" height="9" fill="#427819"/>
+    <rect x="438.59" y="58" width="7.41" height="9" fill="#30363d"/>
+  </g>
+  <circle cx="30" cy="95" r="5" fill="#555555"/>
+  <text x="43" y="99" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12">C 42.3%</text>
   <circle cx="251" cy="95" r="5" fill="#3572A5"/>
-  <text x="264" y="99" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12">Python 25.2%</text>
-  <circle cx="30" cy="126" r="5" fill="#f34b7d"/>
-  <text x="43" y="130" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12">C++ 23.6%</text>
-  <circle cx="251" cy="126" r="5" fill="#555555"/>
-  <text x="264" y="130" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12">C 12.6%</text>
-  <circle cx="30" cy="157" r="5" fill="#e34c26"/>
-  <text x="43" y="161" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12">HTML 8.4%</text>
-  <circle cx="251" cy="157" r="5" fill="#89e051"/>
-  <text x="264" y="161" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12">Shell 1.9%</text>
-  <text x="24" y="184" fill="#6e7681" font-family="Segoe UI, Ubuntu, sans-serif" font-size="10">Profile and GitHub Pages repos excluded · private repos excluded</text>
+  <text x="264" y="99" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Python 18.6%</text>
+  <circle cx="30" cy="126" r="5" fill="#adb2cb"/>
+  <text x="43" y="130" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12">VHDL 17.6%</text>
+  <circle cx="251" cy="126" r="5" fill="#6E4C13"/>
+  <text x="264" y="130" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Assembly 8.3%</text>
+  <circle cx="30" cy="157" r="5" fill="#f34b7d"/>
+  <text x="43" y="161" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12">C++ 8.3%</text>
+  <circle cx="251" cy="157" r="5" fill="#427819"/>
+  <text x="264" y="161" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Makefile 3.1%</text>
+  <text x="24" y="184" fill="#6e7681" font-family="Segoe UI, Ubuntu, -apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Core embedded/FPGA/systems repos · normalized per repo</text>
 </svg>
